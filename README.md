@@ -6,3 +6,4 @@
 ## 第1章 基础
 [1.2 数据抽象](/note/chapter01/1.2.md)
 [1.3 背包、队列和栈](/note/chapter01/1.3.md)
+[1.4 算法分析](/note/chapter01/1.4.md)
