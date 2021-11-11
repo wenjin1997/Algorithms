@@ -1,5 +1,6 @@
 package chapter01.bag;
 
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.function.Consumer;
 
