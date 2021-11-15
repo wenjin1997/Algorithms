@@ -5,10 +5,24 @@ import edu.princeton.cs.algs4.In;
 /**
  * @author 文进
  * @version 1.0
- * 排序算法类的模板(P153)
+ * 希尔排序(P163)
  */
-public class Example {
+public class Shell {
     public static void sort(Comparable[] a) {
+        // 将a[]按升序排列
+        int N = a.length;
+        int h = 1;
+        while (h < N/3) h = 3 * h + 1; // 1, 4, 13, 40, 121, 364, 1093, ...
+        while (h >= 1) {
+            // 将数组变为h有序
+            for (int i = h; i < N; i++) {
+                // 将a[i]插入到a[i-h],a[i-2*h],a[i-3*h]之中
+                for (int j = i; j >= h && less(a[j], a[j-h]); j -= h) {
+                    exch(a, j, j - h);
+                }
+            }
+            h = h/3;
+        }
     }
 
     private static boolean less(Comparable v, Comparable w) {
@@ -33,8 +47,7 @@ public class Example {
     }
 
     public static void main(String[] args) { // 从标准输入读取字符串，将它们排序并输出
-//        String[] a = In.readStrings();
-        String[] a = {"S", "O", "R", "T", "E", "X", "A", "M", "P", "L", "E"};
+        String[] a = {"S", "H", "E", "L", "L", "S", "O", "R", "T", "E", "X", "A", "M", "P", "L", "E"};
         sort(a);
         assert isSorted(a);
         show(a);
