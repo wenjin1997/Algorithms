@@ -12,3 +12,4 @@
 - [2.1 初级排序算法](/note/chapter02/2.1.md)
 - [2.2 归并排序](/note/chapter02/2.2.md)
 - [2.3 快速排序](/note/chapter02/2.3.md)
+- [2.4 优先队列](/note/chapter02/2.4.md)
