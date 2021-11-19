@@ -61,6 +61,7 @@ public class MaxPQ<Key extends Comparable<Key>> {
             if (j < N && less(j, j + 1)) j++;
             if (!less(k, j)) break;
             k = j;
+            exch(k, j);
         }
     }
 }
