@@ -13,3 +13,4 @@
 - [2.2 归并排序](/note/chapter02/2.2.md)
 - [2.3 快速排序](/note/chapter02/2.3.md)
 - [2.4 优先队列](/note/chapter02/2.4.md)
+- [2.5 应用](/note/chapter02/2.5.md)
