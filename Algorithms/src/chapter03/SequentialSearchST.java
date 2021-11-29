@@ -38,7 +38,7 @@ public class SequentialSearchST<Key, Value> {
                 return;
             }
         }
-        first = new Node(key, val, first); // 为命中，新建结点
+        first = new Node(key, val, first); // 未命中，新建结点
     }
 
 }
