@@ -17,3 +17,5 @@
 
 ## 第3章 查找
 - [3.1 符号表](/note/chapter03/3.1.md)
+- [3.2 二叉查找树](/note/chapter03/3.2.md)
+- [3.3 平衡查找树](/note/chapter03/3.3.md)
